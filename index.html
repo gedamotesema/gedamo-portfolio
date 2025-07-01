@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gedamo Tesema - Futuristic Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <div class="mode-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1 class="glitch" data-text="Gedamo Tesema">Gedamo Tesema</h1>
+      <p id="typed-text" class="typed-text"></p>
+      <div class="hero-buttons">
+        <a href="mailto:gedamo@jamiione.com" class="btn">Contact Me</a>
+        <a href="https://t.me/gedamo" target="_blank" rel="noopener" class="btn btn-outline">Telegram</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="glassmorphic">
+      <h2>About Me</h2>
+      <p>
+        I'm Gedamo Tesema, a 22-year-old self-taught Software Engineer and current Digitization & Communication Manager at Jamiione.  
+        I started coding in Grade 7, and since then, I've developed deep expertise in both legacy and modern technologies.  
+        My journey began long before university, where I landed my first role at Jamiione as a Data Organizer. Within a short time, I was promoted to Tech Support Officer thanks to my passion for technology.
+      </p>
+      <p>
+        During my time at Jamiione, I digitized over 25,000 Edir members and played a major role in the digital transformation of traditional community systems.  
+        I’ve diagnosed critical bugs, improved core applications, and supported teams with hands-on tech training—including company-wide workshops on Microsoft 365.
+      </p>
+      <p>
+        I am now pursuing a BA in Software Engineering at Wachemo University while continuing to lead digital innovation at Jamiione.  
+        My mission is to build systems that transform tradition with innovation—one line of code at a time.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="glassmorphic">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <!-- You can dynamically inject or list these -->
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>PHP, Laravel, Node.js, React</li>
+          <li>SQL, MySQL, MongoDB</li>
+          <li>Telegram API, Python</li>
+          <li>Microsoft Office 365, Google Workspace</li>
+          <li>System Analysis, Digital Transformation</li>
+          <li>Tech Support & Training</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="glassmorphic">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <h3>EDIR digital transformation with jamii.one</h3>
+          <p>Connected over 25K+ traditional Edir members to digital services and insurance systems.</p>
+          
+        </article>
+        <article class="project-card" tabindex="0">
+          <h3>Student Management System</h3>
+          <p>End-to-end platform for student records, payments, and results.</p>
+          <span class="tech">PHP, JavaScript, MySQL</span>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h3>NGO and Charity Websites</h3>
+          <p>Built branded, responsive platforms for community development organizations.</p>
+          <span class="tech">HTML, CSS, JS, PHP</span>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h3>Custom CRM System</h3>
+          <p>Internal tool for managing customers, products, and leads.</p>
+          <span class="tech">React, Node.js, MongoDB</span>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h3>Telegram Admission Bot</h3>
+          <p>Smart bot for student registration, payment proof collection, and admin approval.</p>
+          <span class="tech">Python, Telegram API, PostgreSQL</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="glassmorphic">
+      <h2>Experience</h2>
+      <div class="timeline-horizontal" tabindex="0">
+        <div class="timeline-item">
+          <strong>Digitization & Communication Manager – Jamiione</strong>
+          <span>Jun 2023 – Present</span>
+          <p>Leading digital transformation, tech training, and communication strategies.</p>
+        </div>
+        <div class="timeline-item">
+          <strong>Tech Support Officer – Jamiione</strong>
+          <span>2022 – 2023</span>
+          <p>Diagnosed platform issues, trained users, and supported app feature rollouts.</p>
+        </div>
+        <div class="timeline-item">
+          <strong>Data Organizer – Jamiione</strong>
+          <span>2022 – 2023</span>
+          <p>Digitized over 25K+ Edir records, enabling a seamless transition to the platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="glassmorphic">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" required />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn">Send</button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Background Canvas -->
+  <canvas id="particles"></canvas>
+
+</body>
+</html>
