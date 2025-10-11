@@ -3,8 +3,8 @@ const typedStrings = [
   "Software Engineer.",
   "Digitization Manager.",
   "AI Enthusiast.",
-  "Building innovative fintech solutions.",
-  "Connecting tradition & technology.",
+  "Building crypto trading bots.",
+  "cyrpto analysis and trading signals.",
 ];
 
 let typedIndex = 0,
@@ -213,3 +213,4 @@ document.querySelectorAll('.signal-card').forEach(card => {
 });
 
 drawParticles();
+
